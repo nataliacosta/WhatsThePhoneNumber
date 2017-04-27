@@ -33,7 +33,6 @@ generateResult = (input) => {
     const inputArray = input.split("")
     inputArray.map((char, index) => {
         if (isLetter(char)) {
-            console.log('here', char)
             let number
             Object.keys(numberLetter).map((data) => {
                 if (numberLetter[data].includes(char)) {
@@ -45,4 +44,3 @@ generateResult = (input) => {
     })
     document.getElementById("result").innerText = input
 }
-
