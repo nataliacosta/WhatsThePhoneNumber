@@ -7,12 +7,14 @@
 
         <!-- stylesheet (tachyons) -->
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
-    </head> 
-    <body class="bg-black white helvetica">
-        <h1 class="f1 tracked-tight mb0 w-100 tc">What's the Number?</h1>
-        <h2 class="f5 tracked fw1 w-100 tc">por Natalia Costa</h2>
-        <textarea id="input"></textarea>
-        <button onclick="setInput()"> Send </button>
-        <div id="result"></div>
+    </head>
+    <body class="bg-black white helvetica flex flex-column items-center">
+        <h1 class="f1 tracked-tight mt6 mb0">What's the Number?</h1>
+        <h2 class="f5 tracked fw1 mb5">por Natalia Costa</h2>
+        <p class="f4 fw2 mb0">Enter your input</p>
+        <textarea class="flex-row bg-black ba b--white white fw3 w-25 ma3 h4" style="resize: none;" id="input"></textarea>
+        <button class="w-25 bg-black white ba b--white h2 pointer" onclick="setInput()"> Send </button>
+        <p class="f4 fw2 mt5" id="result-title">Result</p>
+        <div class="f5 white w-25 tl mv2" id="result"></div>
     </body>
 </html>
